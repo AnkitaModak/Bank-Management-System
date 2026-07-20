@@ -1,79 +1,112 @@
-# Bank Management System
+# 🏦 Bank Management System
 
-A Java-based **Bank Management System** developed as a learning project to strengthen core Java programming skills and Object-Oriented Programming (OOP) concepts. The project is being built incrementally, with each phase introducing new Java concepts and features.
+A Java-based **Bank Management System** developed to learn and implement core Java and Object-Oriented Programming (OOP) concepts through a real-world project. The application is being built incrementally, with each development phase introducing new Java features and best practices.
 
-## Features (Planned)
+---
 
-* Customer Management
-* Employee Management
-* Savings and Current Accounts
-* Deposit and Withdrawal Operations
-* Balance Inquiry
-* Transaction Management
-* Exception Handling
-* File Handling
-* JDBC Database Integration
-* Console-Based Menu
-* GUI using Java Swing (Future Enhancement)
+## 🚀 Project Status
 
-## Technologies Used
+**Current Phase:** Day 2 – Person Class Completed ✅
 
-* Java
-* IntelliJ IDEA
-* Git
-* GitHub
+### Completed
 
-## Project Structure
+- Project setup
+- Package structure
+- Class and interface design
+- `Person` class implementation
+- Constructors
+- Encapsulation
+- Getters and Setters
+- Display method
 
-```text
+---
+
+## 📂 Project Structure
+
+```
 src
 └── bankmanagement
     ├── people
-    │   ├── Person
-    │   ├── Customer
-    │   └── Employee
+    │   ├── Person.java
+    │   ├── Customer.java
+    │   └── Employee.java
+    │
     ├── accounts
-    │   ├── Account
-    │   ├── SavingsAccount
-    │   └── CurrentAccount
+    │   ├── Account.java
+    │   ├── SavingsAccount.java
+    │   └── CurrentAccount.java
+    │
     ├── services
-    │   ├── Transaction
-    │   └── BankService
+    │   ├── Transaction.java
+    │   └── BankService.java
+    │
     └── main
-        └── Main
+        └── Main.java
 ```
 
-## Learning Objectives
+---
 
-This project is designed to practice and apply:
+## 📚 Java Concepts Practiced
 
-* Object-Oriented Programming (OOP)
-* Inheritance
-* Polymorphism
-* Abstraction
-* Interfaces
-* Encapsulation
-* Exception Handling
-* Collections
-* File Handling
-* JDBC
-* Java Swing
+- Classes & Objects
+- Packages
+- Encapsulation
+- Constructors
+- `this` Keyword
+- Access Modifiers
+- Getters & Setters
+- Instance Methods
 
-## Development Roadmap
+---
 
-* ✅ Project setup
-* ✅ Package and class design
-* ⏳ Implement core classes
-* ⏳ Banking operations
-* ⏳ Exception handling
-* ⏳ File handling
-* ⏳ JDBC integration
-* ⏳ Swing GUI
+## 🛠 Technologies
 
-## Author
+- Java
+- IntelliJ IDEA
+- Git
+- GitHub
+
+---
+
+## 📅 Development Roadmap
+
+- ✅ Day 1 – Project Planning & Structure
+- ✅ Day 2 – Person Class
+- ⏳ Day 3 – Customer & Employee (Inheritance)
+- ⏳ Day 4 – Account Class
+- ⏳ Day 5 – Savings & Current Account
+- ⏳ Day 6 – Transaction Interface
+- ⏳ Day 7 – BankService
+- ⏳ Day 8 – Console Menu
+- ⏳ Exception Handling
+- ⏳ File Handling
+- ⏳ Collections Framework
+- ⏳ JDBC Integration
+- ⏳ Swing GUI (Future Enhancement)
+
+---
+
+## 🎯 Learning Objectives
+
+This project is being developed to practice:
+
+- Object-Oriented Programming (OOP)
+- Inheritance
+- Polymorphism
+- Abstraction
+- Interfaces
+- Exception Handling
+- Collections Framework
+- File Handling
+- JDBC
+- Java Swing
+
+---
+
+## 👩‍💻 Author
 
 **Ankita Modak**
 
 ---
 
-This repository is part of my Java learning journey, where I build a real-world application while exploring core and advanced Java concepts step by step.
+> This repository documents my journey of building a complete Java application while learning software development concepts step by step.
