@@ -15,7 +15,7 @@ public class Customer extends Person{
     public void setCustomerID(String newCustomerID){
         this.customerID = newCustomerID;
     }
-    @Override
+    @Override // annonations to show compiler that method must override
     public void displayDetails(){
         super.displayDetails();
         System.out.println("Customer ID: "+customerID);
