@@ -1,12 +1,13 @@
 package bankmanagement.main;
 import bankmanagement.people.Person;
-import java.util.*;
+import bankmanagement.people.Customer;
 //Starts the application and displays the menu.
 public class Main {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        Person p1 = new Person();
-        Person p2 = new Person(sc.nextLine(),sc.nextLine(),sc.nextLine(),sc.nextInt());
+        Person p1 = new Person("Ankita Modak","Tarakeswar","9648291829",20);
+        Customer c1 = new Customer("Arnab Ganguly",23,"Takipur","9097692242","c01");
+        Person p2 = new Customer();//upcasting
+        c1.displayDetails();
         p1.displayDetails();
         p2.displayDetails();
     }
