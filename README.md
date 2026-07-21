@@ -1,65 +1,119 @@
-# 🏦 Bank Management System
+# 🏦 Bank Management System (Java OOP Project)
 
-A Java-based **Bank Management System** developed to learn and implement core Java and Object-Oriented Programming (OOP) concepts through a real-world project. The application is being built incrementally, with each development phase introducing new Java features and best practices.
+A console-based **Bank Management System** developed in Java to strengthen Object-Oriented Programming concepts. This project is being built incrementally while learning Java, with each feature implementing newly learned concepts and best practices.
 
 ---
 
-## 🚀 Project Status
+## 📌 Project Objectives
 
-**Current Phase:** Day 2 – Person Class Completed ✅
+- Apply Object-Oriented Programming concepts in a real-world application.
+- Develop clean, modular, and maintainable Java code.
+- Learn professional project structure using packages.
+- Practice Git and GitHub workflow.
+- Gradually integrate advanced Java concepts such as Collections, File Handling, JDBC, and GUI.
 
-### Completed
+---
 
-- Project setup
-- Package structure
-- Class and interface design
-- `Person` class implementation
-- Constructors
-- Encapsulation
-- Getters and Setters
-- Display method
+## 🚀 Current Progress
+
+### ✅ Sprint 1 – Project Setup
+- Created IntelliJ project
+- Organized project using packages
+- Created GitHub repository
+- Added project documentation
+- Designed application architecture
+
+### ✅ Sprint 2 – Person Class
+- Implemented encapsulation
+- Added default and parameterized constructors
+- Implemented getters and setters
+- Created `displayDetails()` method
+- Tested using the `Main` class
+
+### ✅ Sprint 3 – Customer Class
+- Implemented inheritance using `extends`
+- Used constructor chaining with `super()`
+- Added customer-specific attributes
+- Implemented method overriding
+- Applied runtime polymorphism (Dynamic Method Dispatch)
+- Tested upcasting using parent class references
 
 ---
 
 ## 📂 Project Structure
 
 ```
-src
-└── bankmanagement
-    ├── people
-    │   ├── Person.java
-    │   ├── Customer.java
-    │   └── Employee.java
-    │
-    ├── accounts
-    │   ├── Account.java
-    │   ├── SavingsAccount.java
-    │   └── CurrentAccount.java
-    │
-    ├── services
-    │   ├── Transaction.java
-    │   └── BankService.java
-    │
-    └── main
-        └── Main.java
+bankmanagement
+├── people
+│   ├── Person.java
+│   ├── Customer.java
+│   └── Employee.java
+│
+├── accounts
+│   ├── Account.java
+│   ├── SavingsAccount.java
+│   └── CurrentAccount.java
+│
+├── services
+│   ├── Transaction.java
+│   └── BankService.java
+│
+└── main
+    └── Main.java
 ```
 
 ---
 
-## 📚 Java Concepts Practiced
+## 🧠 Java Concepts Practiced
 
-- Classes & Objects
-- Packages
-- Encapsulation
-- Constructors
-- `this` Keyword
-- Access Modifiers
-- Getters & Setters
-- Instance Methods
+### Object-Oriented Programming
+- ✅ Classes & Objects
+- ✅ Encapsulation
+- ✅ Constructors
+- ✅ Constructor Overloading
+- ✅ Inheritance
+- ✅ Method Overriding
+- ✅ Runtime Polymorphism
+- ✅ Dynamic Method Dispatch
+- ✅ Upcasting
+- ✅ `this` keyword
+- ✅ `super` keyword
+- ⏳ Interfaces
+- ⏳ Abstraction
+
+### Java Fundamentals
+- ✅ Packages
+- ✅ Access Modifiers
+- ✅ Getters & Setters
+- ⏳ Exception Handling
+- ⏳ Collections Framework
+- ⏳ File Handling
+- ⏳ JDBC
+- ⏳ Swing GUI
 
 ---
 
-## 🛠 Technologies
+## 🛣️ Development Roadmap
+
+- [x] Project Setup
+- [x] Person Class
+- [x] Customer Class
+- [ ] Employee Class
+- [ ] Account Class
+- [ ] Savings Account
+- [ ] Current Account
+- [ ] Transaction Interface
+- [ ] BankService
+- [ ] Console Menu
+- [ ] Exception Handling
+- [ ] Collections Framework
+- [ ] File Handling
+- [ ] JDBC Integration
+- [ ] Swing GUI
+
+---
+
+## 💻 Technologies Used
 
 - Java
 - IntelliJ IDEA
@@ -68,38 +122,9 @@ src
 
 ---
 
-## 📅 Development Roadmap
+## 🎯 Learning Approach
 
-- ✅ Day 1 – Project Planning & Structure
-- ✅ Day 2 – Person Class
-- ⏳ Day 3 – Customer & Employee (Inheritance)
-- ⏳ Day 4 – Account Class
-- ⏳ Day 5 – Savings & Current Account
-- ⏳ Day 6 – Transaction Interface
-- ⏳ Day 7 – BankService
-- ⏳ Day 8 – Console Menu
-- ⏳ Exception Handling
-- ⏳ File Handling
-- ⏳ Collections Framework
-- ⏳ JDBC Integration
-- ⏳ Swing GUI (Future Enhancement)
-
----
-
-## 🎯 Learning Objectives
-
-This project is being developed to practice:
-
-- Object-Oriented Programming (OOP)
-- Inheritance
-- Polymorphism
-- Abstraction
-- Interfaces
-- Exception Handling
-- Collections Framework
-- File Handling
-- JDBC
-- Java Swing
+This project is being developed incrementally, with each sprint focusing on applying newly learned Java concepts to a real-world banking system. The goal is not just to complete the project, but to understand the design decisions and programming principles behind every implementation.
 
 ---
 
@@ -107,6 +132,6 @@ This project is being developed to practice:
 
 **Ankita Modak**
 
----
+B.Sc. Computer Science Student
 
-> This repository documents my journey of building a complete Java application while learning software development concepts step by step.
+Learning Java through project-based development.
