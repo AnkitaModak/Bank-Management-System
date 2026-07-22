@@ -3,7 +3,7 @@ package bankmanagement.people;
 public class Customer extends Person{
     private String customerID;
     public Customer(){
-        customerID = "not applicable;";
+        customerID = "Not Available";
     }
     public Customer(String name,int age,String address,String phoneNo,String customerID){
         super(name,address,phoneNo,age);
@@ -15,10 +15,10 @@ public class Customer extends Person{
     public void setCustomerID(String newCustomerID){
         this.customerID = newCustomerID;
     }
-    @Override // annonations to show compiler that method must override
+    @Override
     public void displayDetails(){
         super.displayDetails();
-        System.out.println("Customer ID: "+customerID);
+        System.out.println("Customer ID: "+getCustomerID());
     }
 
 }
