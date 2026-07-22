@@ -1,49 +1,104 @@
-# 🏦 Bank Management System (Java OOP Project)
+# 🏦 Bank Management System (Java)
 
-A console-based **Bank Management System** developed in Java to strengthen Object-Oriented Programming concepts. This project is being built incrementally while learning Java, with each feature implementing newly learned concepts and best practices.
-
----
-
-## 📌 Project Objectives
-
-- Apply Object-Oriented Programming concepts in a real-world application.
-- Develop clean, modular, and maintainable Java code.
-- Learn professional project structure using packages.
-- Practice Git and GitHub workflow.
-- Gradually integrate advanced Java concepts such as Collections, File Handling, JDBC, and GUI.
+A console-based Bank Management System developed in Java to strengthen Object-Oriented Programming (OOP) concepts. This project is being built incrementally while learning Java, with each sprint introducing new concepts and applying them to a real-world banking application.
 
 ---
 
-## 🚀 Current Progress
+# 📌 Project Goals
 
-### ✅ Sprint 1 – Project Setup
-- Created IntelliJ project
-- Organized project using packages
+- Learn Java through project-based development.
+- Apply Object-Oriented Programming concepts.
+- Write clean, modular, and maintainable code.
+- Practice professional Git & GitHub workflow.
+- Build a complete banking application from scratch.
+
+---
+
+# 🚀 Current Progress
+
+## ✅ Sprint 1 – Project Setup
+
+- Created IntelliJ IDEA project
+- Organized packages
 - Created GitHub repository
 - Added project documentation
-- Designed application architecture
-
-### ✅ Sprint 2 – Person Class
-- Implemented encapsulation
-- Added default and parameterized constructors
-- Implemented getters and setters
-- Created `displayDetails()` method
-- Tested using the `Main` class
-
-### ✅ Sprint 3 – Customer Class
-- Implemented inheritance using `extends`
-- Used constructor chaining with `super()`
-- Added customer-specific attributes
-- Implemented method overriding
-- Applied runtime polymorphism (Dynamic Method Dispatch)
-- Tested upcasting using parent class references
+- Designed project architecture
 
 ---
 
-## 📂 Project Structure
+## ✅ Sprint 2 – Person Class
+
+Implemented the base `Person` class.
+
+### Features
+- Encapsulation
+- Private instance variables
+- Default constructor
+- Parameterized constructor
+- Constructor overloading
+- Getters and setters
+- `displayDetails()` method
+
+### Concepts Learned
+- Classes & Objects
+- Constructors
+- Encapsulation
+- `this` keyword
+- Packages
+- Access Modifiers
+
+---
+
+## ✅ Sprint 3 – Customer Class
+
+Implemented the `Customer` class by extending `Person`.
+
+### Features
+- Inheritance
+- Constructor chaining using `super()`
+- Customer-specific attributes
+- Method overriding
+- Runtime polymorphism
+- Upcasting
+
+### Concepts Learned
+- Inheritance
+- Method Overriding
+- Dynamic Method Dispatch
+- Runtime Polymorphism
+- Upcasting
+- Code Reusability
+
+---
+
+## ✅ Sprint 4 – Employee Class
+
+Implemented the `Employee` class by extending `Person`.
+
+### Features
+- Employee ID
+- Designation
+- Salary
+- Constructor chaining
+- Method overriding
+- Runtime polymorphism
+- Upcasting
+- Salary display using the Indian Rupee symbol (₹)
+
+### Concepts Learned
+- Advanced inheritance
+- Class design
+- High cohesion
+- Reusability
+- Object-oriented modelling
+
+---
+
+# 📂 Project Structure
 
 ```
 bankmanagement
+│
 ├── people
 │   ├── Person.java
 │   ├── Customer.java
@@ -64,9 +119,10 @@ bankmanagement
 
 ---
 
-## 🧠 Java Concepts Practiced
+# 🧠 Java Concepts Practiced
 
-### Object-Oriented Programming
+## Object-Oriented Programming
+
 - ✅ Classes & Objects
 - ✅ Encapsulation
 - ✅ Constructors
@@ -76,15 +132,19 @@ bankmanagement
 - ✅ Runtime Polymorphism
 - ✅ Dynamic Method Dispatch
 - ✅ Upcasting
-- ✅ `this` keyword
-- ✅ `super` keyword
-- ⏳ Interfaces
-- ⏳ Abstraction
+- ✅ `this`
+- ✅ `super`
 
-### Java Fundamentals
+## Java Fundamentals
+
 - ✅ Packages
 - ✅ Access Modifiers
 - ✅ Getters & Setters
+
+### Coming Soon
+
+- ⏳ Abstract Classes
+- ⏳ Interfaces
 - ⏳ Exception Handling
 - ⏳ Collections Framework
 - ⏳ File Handling
@@ -93,12 +153,12 @@ bankmanagement
 
 ---
 
-## 🛣️ Development Roadmap
+# 📈 Development Roadmap
 
 - [x] Project Setup
 - [x] Person Class
 - [x] Customer Class
-- [ ] Employee Class
+- [x] Employee Class
 - [ ] Account Class
 - [ ] Savings Account
 - [ ] Current Account
@@ -113,7 +173,7 @@ bankmanagement
 
 ---
 
-## 💻 Technologies Used
+# 💻 Technologies Used
 
 - Java
 - IntelliJ IDEA
@@ -122,16 +182,53 @@ bankmanagement
 
 ---
 
-## 🎯 Learning Approach
+# 📊 Current Status
 
-This project is being developed incrementally, with each sprint focusing on applying newly learned Java concepts to a real-world banking system. The goal is not just to complete the project, but to understand the design decisions and programming principles behind every implementation.
+**Completed:** 4 Sprints
+
+### Implemented Classes
+
+- ✅ Person
+- ✅ Customer
+- ✅ Employee
+
+### Overall Project Progress
+
+Approximately **40% Complete**
 
 ---
 
-## 👩‍💻 Author
+# 🎯 Learning Approach
+
+This project is developed using a sprint-based approach.
+
+Each sprint focuses on:
+
+- Understanding the Java concept
+- Designing the solution
+- Implementing the feature
+- Testing the implementation
+- Reviewing and improving the code
+
+The objective is to understand **why** each design decision is made rather than simply writing code that works.
+
+---
+
+# 🚀 Upcoming Sprint
+
+## Sprint 5
+
+- Design the `Account` class
+- Introduce composition
+- Prepare the banking logic
+- Build the foundation for deposits and withdrawals
+
+---
+
+# 👩‍💻 Author
 
 **Ankita Modak**
 
 B.Sc. Computer Science Student
 
-Learning Java through project-based development.
+Learning Java through project-based software development.
