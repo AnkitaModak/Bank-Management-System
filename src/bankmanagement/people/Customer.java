@@ -3,6 +3,7 @@ package bankmanagement.people;
 public class Customer extends Person{
     private String customerID;
     public Customer(){
+        super();
         customerID = "Not Available";
     }
     public Customer(String name,int age,String address,String phoneNo,String customerID){
