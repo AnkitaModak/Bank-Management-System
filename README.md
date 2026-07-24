@@ -1,34 +1,37 @@
 # 🏦 Bank Management System (Java)
 
-A console-based Bank Management System built in Java to strengthen Object-Oriented Programming concepts and gradually evolve into a complete banking application.
+A console-based Bank Management System built in Java to learn Object-Oriented Programming by developing a real-world application from scratch.
 
 ---
 
-## 📌 Project Objectives
+# 📌 Project Objectives
 
-- Learn Java OOP through a real-world project.
-- Follow proper software design principles.
-- Practice writing clean, modular, and reusable code.
-- Use Git and GitHub for version control.
+- Learn Java through project-based development.
+- Understand Object-Oriented Programming concepts.
+- Write clean, modular, and reusable code.
+- Practice Git & GitHub version control.
+- Build software following real-world design principles.
 
 ---
 
-## 🛠 Technologies Used
+# 🛠 Technologies Used
 
 - Java
 - Object-Oriented Programming (OOP)
 - VS Code
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 bankmanagement
 │
 ├── accounts
-│   └── Account.java
+│   ├── Account.java
+│   └── SavingsAccount.java
 │
 ├── people
 │   ├── Person.java
@@ -46,15 +49,18 @@ bankmanagement
 # ✅ Completed Sprints
 
 ## Sprint 1 – Project Setup
-- Project structure
-- Packages
-- GitHub repository
-- Class skeletons
+
+- Created Java project
+- Organized packages
+- Initialized GitHub repository
+- Created class structure
 
 ---
 
 ## Sprint 2 – Person Class
+
 Implemented:
+
 - Encapsulation
 - Constructors
 - Constructor Overloading
@@ -64,17 +70,21 @@ Implemented:
 ---
 
 ## Sprint 3 – Customer Class
+
 Implemented:
+
 - Inheritance (`Customer extends Person`)
-- Method Overriding
-- Runtime Polymorphism
 - Constructor Chaining using `super()`
 - Customer ID
+- Method Overriding
+- Runtime Polymorphism
 
 ---
 
 ## Sprint 4 – Employee Class
+
 Implemented:
+
 - Inheritance (`Employee extends Person`)
 - Employee ID
 - Designation
@@ -84,7 +94,9 @@ Implemented:
 ---
 
 ## Sprint 5 – Account Class
+
 Implemented:
+
 - Composition (`Account` has a `Customer`)
 - Account Number
 - Balance
@@ -92,12 +104,26 @@ Implemented:
 - Branch Name
 - Constructors
 - Getters & Setters
-- Account Details Display
+- `displayDetails()`
 - Interaction between Account and Customer objects
 
 ---
 
-# 📖 OOP Concepts Covered
+## Sprint 6 – SavingsAccount Class
+
+Implemented:
+
+- Inheritance (`SavingsAccount extends Account`)
+- Interest Rate
+- Minimum Balance
+- Constructor Chaining using `super()`
+- Method Overriding
+- Reuse of parent functionality with `super.displayDetails()`
+- Upcasting demonstration
+
+---
+
+# 📚 OOP Concepts Covered
 
 - ✅ Classes & Objects
 - ✅ Encapsulation
@@ -106,26 +132,40 @@ Implemented:
 - ✅ Inheritance
 - ✅ Method Overriding
 - ✅ Runtime Polymorphism
+- ✅ Upcasting
 - ✅ Composition (Has-A Relationship)
+- ✅ Constructor Chaining
 - ✅ Packages
 - ✅ Object Collaboration
 
 ---
 
+# 📁 Current Class Hierarchy
+
+```
+Person
+├── Customer
+└── Employee
+
+Account
+└── SavingsAccount
+```
+
+---
+
 # 🚧 Upcoming Features
 
-- Savings Account
 - Current Account
-- Deposit
-- Withdraw
+- Deposit Operation
+- Withdraw Operation
 - Balance Validation
 - Interest Calculation
-- Transactions
+- Transaction History
 - Bank Service Layer
-- Collections (`ArrayList`)
+- Java Collections Framework
 - Exception Handling
 - File Handling
-- JDBC (Database Integration)
+- JDBC Integration
 - Swing GUI
 
 ---
@@ -133,30 +173,31 @@ Implemented:
 # 📈 Current Progress
 
 ```
-██████████░░░░░░░░░░ 50%
+████████████░░░░░░░░ 60%
 ```
 
 ---
 
-# 🎯 Learning Goals
+# 🎯 Learning Outcomes
 
-This project is being developed step-by-step to master:
+Through this project, I am learning:
 
 - Object-Oriented Programming
 - Software Design
+- Code Reusability
 - Java Collections Framework
 - Exception Handling
 - File Handling
 - JDBC
 - GUI Development
-- Clean Code Practices
+- Clean Coding Practices
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Ankita Modak**
 
 B.Sc. Computer Science Student
 
-Learning Java by building real-world projects from scratch.
+Learning Java by building a complete Bank Management System from scratch.
