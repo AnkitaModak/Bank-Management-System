@@ -5,6 +5,7 @@ public class Employee extends Person{
     private String designation;
     private double salary;
     public Employee(){
+        super();
         this.employeeID = "Not Available";
         this.designation="Not Available";
         this.salary = 0.0;
