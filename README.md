@@ -8,9 +8,9 @@ A console-based Bank Management System built in Java to learn Object-Oriented Pr
 
 - Learn Java through project-based development.
 - Understand Object-Oriented Programming concepts.
-- Write clean, modular, and reusable code.
-- Practice Git & GitHub version control.
-- Build software following real-world design principles.
+- Build real-world software using Java.
+- Practice clean coding principles.
+- Learn Git & GitHub workflow.
 
 ---
 
@@ -31,7 +31,8 @@ bankmanagement
 │
 ├── accounts
 │   ├── Account.java
-│   └── SavingsAccount.java
+│   ├── SavingsAccount.java
+│   └── CurrentAccount.java
 │
 ├── people
 │   ├── Person.java
@@ -50,10 +51,10 @@ bankmanagement
 
 ## Sprint 1 – Project Setup
 
-- Created Java project
-- Organized packages
-- Initialized GitHub repository
-- Created class structure
+- Java Project Setup
+- Package Structure
+- GitHub Repository
+- Project Organization
 
 ---
 
@@ -74,10 +75,9 @@ Implemented:
 Implemented:
 
 - Inheritance (`Customer extends Person`)
-- Constructor Chaining using `super()`
 - Customer ID
+- Constructor Chaining
 - Method Overriding
-- Runtime Polymorphism
 
 ---
 
@@ -105,42 +105,55 @@ Implemented:
 - Constructors
 - Getters & Setters
 - `displayDetails()`
-- Interaction between Account and Customer objects
 
 ---
 
-## Sprint 6 – SavingsAccount Class
+## Sprint 6 – SavingsAccount
 
 Implemented:
 
 - Inheritance (`SavingsAccount extends Account`)
 - Interest Rate
 - Minimum Balance
-- Constructor Chaining using `super()`
+- Constructor Chaining
 - Method Overriding
-- Reuse of parent functionality with `super.displayDetails()`
-- Upcasting demonstration
+- Runtime Polymorphism
 
 ---
 
-# 📚 OOP Concepts Covered
+## Sprint 7 – CurrentAccount
+
+Implemented:
+
+- Inheritance (`CurrentAccount extends Account`)
+- Overdraft Limit
+- Withdrawal Limit
+- Transaction Limit
+- Maintenance Fee
+- Constructor Chaining
+- Method Overriding
+- Runtime Polymorphism
+
+---
+
+# 📚 OOP Concepts Learned
 
 - ✅ Classes & Objects
 - ✅ Encapsulation
 - ✅ Constructors
 - ✅ Constructor Overloading
 - ✅ Inheritance
+- ✅ Composition (Has-A Relationship)
 - ✅ Method Overriding
 - ✅ Runtime Polymorphism
 - ✅ Upcasting
-- ✅ Composition (Has-A Relationship)
 - ✅ Constructor Chaining
 - ✅ Packages
 - ✅ Object Collaboration
 
 ---
 
-# 📁 Current Class Hierarchy
+# 🏗 Current Class Hierarchy
 
 ```
 Person
@@ -148,49 +161,73 @@ Person
 └── Employee
 
 Account
-└── SavingsAccount
+├── SavingsAccount
+└── CurrentAccount
 ```
+
+---
+
+# 💻 Current Features
+
+- Create Customers
+- Create Employees
+- Create Savings Accounts
+- Create Current Accounts
+- Display Complete Account Information
+- Parent-Child Relationship using Inheritance
+- Account linked with Customer using Composition
+- Runtime Polymorphism Demonstration
 
 ---
 
 # 🚧 Upcoming Features
 
-- Current Account
-- Deposit Operation
-- Withdraw Operation
+- Deposit Money
+- Withdraw Money
 - Balance Validation
 - Interest Calculation
-- Transaction History
-- Bank Service Layer
-- Java Collections Framework
+- Transaction Processing
 - Exception Handling
+- Collections Framework
 - File Handling
-- JDBC Integration
+- JDBC Database Integration
 - Swing GUI
 
 ---
 
-# 📈 Current Progress
+# 📈 Progress
 
 ```
-████████████░░░░░░░░ 60%
+██████████████░░░░░░ 70%
 ```
 
 ---
 
 # 🎯 Learning Outcomes
 
-Through this project, I am learning:
+This project demonstrates:
 
 - Object-Oriented Programming
-- Software Design
+- Software Design Principles
 - Code Reusability
-- Java Collections Framework
-- Exception Handling
-- File Handling
-- JDBC
-- GUI Development
-- Clean Coding Practices
+- Inheritance & Polymorphism
+- Constructor Chaining
+- Composition
+- Modular Programming
+- Clean Code Practices
+
+---
+
+# 🚀 Future Scope
+
+- User Login
+- Multiple Customers
+- Transaction History
+- Account Search
+- Banking Services
+- Database Connectivity
+- Desktop GUI
+- Report Generation
 
 ---
 
