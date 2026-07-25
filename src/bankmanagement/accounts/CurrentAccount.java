@@ -48,7 +48,7 @@ public class CurrentAccount extends Account{
     @Override
     public void displayDetails(){
         super.displayDetails();
-        System.out.println("overdraft Limit: " + getOverdraftLimit());
+        System.out.println("Overdraft Limit: " + getOverdraftLimit());
         System.out.println("Withdrawal Limit: " + getWithdrawalLimit());
         System.out.println("Transaction Limit: " + getTransactionLimit());
         System.out.println("Maintenance Fee: " + getMaintenanceFee());
