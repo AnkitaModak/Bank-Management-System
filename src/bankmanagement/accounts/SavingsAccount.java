@@ -1,5 +1,4 @@
 package bankmanagement.accounts;
-import bankmanagement.accounts.Account;
 import bankmanagement.people.Customer;
 
 //Represents a savings account.
