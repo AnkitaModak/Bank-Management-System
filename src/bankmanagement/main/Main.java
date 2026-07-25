@@ -1,9 +1,6 @@
 package bankmanagement.main;
-import bankmanagement.accounts.SavingsAccount;
-import bankmanagement.people.Person;
-import bankmanagement.people.Customer;
-import bankmanagement.people.Employee;
-import bankmanagement.accounts.Account;
+import bankmanagement.people.*;
+import bankmanagement.accounts.*;
 //Starts the application and displays the menu.
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +10,9 @@ public class Main {
 //        Person p3 = new Employee("Ameha Mahato", "Hydrabad", "9823790810", 32, "E0001", "HR", 45000.00);
 //        Account account1 = new Account("MAIN-072026-0001", 10000.89, "123422131313", "mumbai", c1);
 //        account1.displayDetails();
-        Account account2 = new SavingsAccount(7.2,100.00,"MAIN-072026-0001", 10000.89, "123422131313", "Mumbai Main Branch", c1);
+        Account account2 = new SavingsAccount(7.2,100.00,"MAIN-072026-0001", 5000.00, "123422131313", "Mumbai Main Branch", c1);
+        Account account3 = new CurrentAccount(10000.00,5000.00,2,17.89,"MAIN-072026-0001", 5000.00, "123422131313", "Mumbai Main Branch", c1);
         account2.displayDetails();
+        account3.displayDetails();
     }
 }
