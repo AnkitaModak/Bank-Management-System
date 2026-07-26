@@ -33,4 +33,9 @@ public class SavingsAccount extends Account{
         System.out.println("Interest rate: "+ interestRate);
         System.out.println("Minimum Balance: "+minimumBalance);
     }
+    @Override
+    public boolean withdraw(double amount){
+        if(getBalance()- amount < getMinimumBalance()) return false;
+        return super.withdraw(amount);
+    }
 }
