@@ -61,4 +61,9 @@ public class Account {
         System.out.println("Branch Name: "+ getBranchName());
         System.out.println("available balance: "+getBalance());
     }
+    public boolean deposit(double amount){
+        if(amount<=0) return false;
+        setBalance(getBalance()+amount);
+        return true;
+    }
 }
