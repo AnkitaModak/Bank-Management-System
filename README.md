@@ -1,240 +1,98 @@
-# 🏦 Bank Management System (Java)
+📌 Sprint 9: Transaction Management
+✅ Features Added
+💳 Transaction Class
 
-A console-based Bank Management System built in Java to learn Object-Oriented Programming by developing a real-world application from scratch.
+Implemented a Transaction class to represent banking transactions.
 
----
+Attributes:
 
-# 📌 Project Objectives
+Transaction ID
+Transaction Amount
+Transaction Type (DEPOSIT, WITHDRAWAL, NOTRANSACTION)
+Transaction Status (SUCCESS, FAILED, PENDING)
+Associated Account
+📋 Constructors
+Default Constructor
+Parameterized Constructor
+🔒 Encapsulation
 
-- Learn Java through project-based development.
-- Understand Object-Oriented Programming concepts.
-- Build real-world software using Java.
-- Practice clean coding principles.
-- Learn Git & GitHub workflow.
+Implemented complete getters and setters for all attributes.
 
----
+🏷️ Enums
 
-# 🛠 Technologies Used
+Created enums to improve readability and type safety.
 
-- Java
-- Object-Oriented Programming (OOP)
-- VS Code
-- Git
-- GitHub
+TransactionType
 
----
+DEPOSIT
+WITHDRAWAL
+NOTRANSACTION
 
-# 📂 Project Structure
+TransactionStatus
 
-```
-bankmanagement
+SUCCESS
+FAILED
+PENDING
+🔗 Association
+
+Established an association between Transaction and Account.
+
+Each transaction stores a reference to the account on which the transaction is performed.
+
+🖥️ Display Method
+
+Added a displayDetails() method to display transaction information.
+
+🧪 Testing
+
+Verified functionality in Main.java by:
+
+Creating a customer
+Creating a current account
+Creating a transaction
+Displaying account details
+Displaying transaction details
+📂 Updated Project Structure
+BankManagementSystem/
 │
-├── accounts
+├── accounts/
 │   ├── Account.java
 │   ├── SavingsAccount.java
 │   └── CurrentAccount.java
 │
-├── people
+├── people/
 │   ├── Person.java
 │   ├── Customer.java
 │   └── Employee.java
 │
-├── services
+├── services/
+│   └── Transaction.java
 │
-└── main
+├── enums/
+│   ├── TransactionType.java
+│   └── TransactionStatus.java
+│
+└── main/
     └── Main.java
-```
-
----
-
-# ✅ Completed Sprints
-
-## Sprint 1 – Project Setup
-
-- Java Project Setup
-- Package Structure
-- GitHub Repository
-- Project Organization
-
----
-
-## Sprint 2 – Person Class
-
-Implemented:
-
-- Encapsulation
-- Constructors
-- Constructor Overloading
-- Getters & Setters
-- `displayDetails()`
-
----
-
-## Sprint 3 – Customer Class
-
-Implemented:
-
-- Inheritance (`Customer extends Person`)
-- Customer ID
-- Constructor Chaining
-- Method Overriding
-
----
-
-## Sprint 4 – Employee Class
-
-Implemented:
-
-- Inheritance (`Employee extends Person`)
-- Employee ID
-- Designation
-- Salary
-- Method Overriding
-
----
-
-## Sprint 5 – Account Class
-
-Implemented:
-
-- Composition (`Account` has a `Customer`)
-- Account Number
-- Balance
-- IFSC Code
-- Branch Name
-- Constructors
-- Getters & Setters
-- `displayDetails()`
-
----
-
-## Sprint 6 – SavingsAccount
-
-Implemented:
-
-- Inheritance (`SavingsAccount extends Account`)
-- Interest Rate
-- Minimum Balance
-- Constructor Chaining
-- Method Overriding
-- Runtime Polymorphism
-
----
-
-## Sprint 7 – CurrentAccount
-
-Implemented:
-
-- Inheritance (`CurrentAccount extends Account`)
-- Overdraft Limit
-- Withdrawal Limit
-- Transaction Limit
-- Maintenance Fee
-- Constructor Chaining
-- Method Overriding
-- Runtime Polymorphism
-
----
-
-# 📚 OOP Concepts Learned
-
-- ✅ Classes & Objects
-- ✅ Encapsulation
-- ✅ Constructors
-- ✅ Constructor Overloading
-- ✅ Inheritance
-- ✅ Composition (Has-A Relationship)
-- ✅ Method Overriding
-- ✅ Runtime Polymorphism
-- ✅ Upcasting
-- ✅ Constructor Chaining
-- ✅ Packages
-- ✅ Object Collaboration
-
----
-
-# 🏗 Current Class Hierarchy
-
-```
-Person
-├── Customer
-└── Employee
-
-Account
-├── SavingsAccount
-└── CurrentAccount
-```
-
----
-
-# 💻 Current Features
-
-- Create Customers
-- Create Employees
-- Create Savings Accounts
-- Create Current Accounts
-- Display Complete Account Information
-- Parent-Child Relationship using Inheritance
-- Account linked with Customer using Composition
-- Runtime Polymorphism Demonstration
-
----
-
-# 🚧 Upcoming Features
-
-- Deposit Money
-- Withdraw Money
-- Balance Validation
-- Interest Calculation
-- Transaction Processing
-- Exception Handling
-- Collections Framework
-- File Handling
-- JDBC Database Integration
-- Swing GUI
-
----
-
-# 📈 Progress
-
-```
-██████████████░░░░░░ 70%
-```
-
----
-
-# 🎯 Learning Outcomes
-
-This project demonstrates:
-
-- Object-Oriented Programming
-- Software Design Principles
-- Code Reusability
-- Inheritance & Polymorphism
-- Constructor Chaining
-- Composition
-- Modular Programming
-- Clean Code Practices
-
----
-
-# 🚀 Future Scope
-
-- User Login
-- Multiple Customers
-- Transaction History
-- Account Search
-- Banking Services
-- Database Connectivity
-- Desktop GUI
-- Report Generation
-
----
-
-# 👩‍💻 Author
-
-**Ankita Modak**
-
-B.Sc. Computer Science Student
-
-Learning Java by building a complete Bank Management System from scratch.
+🚀 Project Progress
+Sprint	Status
+Sprint 1 – Project Setup	✅ Completed
+Sprint 2 – Person Class	✅ Completed
+Sprint 3 – Customer Class	✅ Completed
+Sprint 4 – Employee Class	✅ Completed
+Sprint 5 – Account Class	✅ Completed
+Sprint 6 – Savings Account	✅ Completed
+Sprint 7 – Current Account	✅ Completed
+Sprint 8 – Banking Operations	✅ Completed
+Sprint 9 – Transaction Management	✅ Completed
+🧠 OOP Concepts Practiced
+Classes & Objects
+Encapsulation
+Inheritance
+Method Overriding
+Polymorphism (Upcasting)
+Association (Has-A Relationship)
+Constructors
+Enums
+Package Organization
+Business Logic Implementation
