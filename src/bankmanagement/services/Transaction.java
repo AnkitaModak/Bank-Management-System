@@ -8,6 +8,7 @@ public class Transaction {
     private TransactionType type;
     private TransactionStatus status;
     private Account account;
+    private static int transactionCounter = 1;
     public Transaction(){
         this.transactionId = "No ID";
         this.amount = 0.0;
@@ -15,8 +16,8 @@ public class Transaction {
         this.status = TransactionStatus.PENDING;
         this.account = null;
     }
-    public Transaction(String transactionId, double amount, TransactionType type, TransactionStatus status, Account account){
-        this.transactionId = transactionId;
+    public Transaction( double amount, TransactionType type, TransactionStatus status, Account account){
+        this.transactionId = "TXN"+transactionCounter++;
         this.amount = amount;
         this.type = type;
         this.status = status;
