@@ -1,58 +1,116 @@
-## 🚀 Sprint 9: Transaction Management
+## 🚀 Progress
 
-### ✨ What's New
+### ✅ Completed Sprints
 
-- Added `Transaction` class to represent banking transactions.
-- Implemented constructors (default & parameterized).
-- Added getters and setters for all transaction attributes.
-- Implemented `displayDetails()` method.
-- Established **Association** between `Transaction` and `Account`.
-- Introduced `TransactionType` enum.
-- Introduced `TransactionStatus` enum.
-- Tested transaction creation and account association in `Main.java`.
+- ✔ Sprint 1 – Project Setup
+- ✔ Sprint 2 – Person Class
+- ✔ Sprint 3 – Customer Class
+- ✔ Sprint 4 – Employee Class
+- ✔ Sprint 5 – Account Class
+- ✔ Sprint 6 – Savings Account
+- ✔ Sprint 7 – Current Account
+- ✔ Sprint 8 – Banking Operations
+- ✔ Sprint 9 – Transaction Management
+- ✔ Sprint 10 – Transaction History
 
-### 📂 New Components
+---
 
-#### Transaction
-- Transaction ID
-- Amount
-- Transaction Type
-- Transaction Status
-- Associated Account
+## ✨ Features Implemented
 
-#### TransactionType Enum
-- `DEPOSIT`
-- `WITHDRAWAL`
-- `NOTRANSACTION`
+### 👤 Person Management
+- Person base class
+- Customer class
+- Employee class
+- Constructor overloading
+- Encapsulation
+- Method overriding
 
-#### TransactionStatus Enum
-- `SUCCESS`
-- `FAILED`
-- `PENDING`
+### 🏦 Account Management
+- Account creation
+- Savings Account
+- Current Account
+- Deposit
+- Withdraw
+- Minimum balance validation
+- Overdraft facility
+- Withdrawal limit
 
-### 🧠 Concepts Learned
+### 💳 Transaction Management
+- Transaction class
+- Automatic transaction ID generation
+- Transaction Type (Deposit / Withdrawal)
+- Transaction Status (Success / Failed / Pending)
+- Automatic transaction creation during deposits and withdrawals
+- Records both successful and failed transactions
 
-- Association (HAS-A Relationship)
-- Enums in Java
-- Constructor Overloading
-- Object Composition
-- Package Organization
-- Real-world Transaction Modeling
+### 📜 Transaction History
+- Transaction history stored for every account
+- Display complete transaction history
+- Transaction helper method to reduce code duplication
+
+---
+
+## 🛠 Java Concepts Covered
+
+- Classes & Objects
+- Inheritance
+- Polymorphism
+- Method Overriding
+- Encapsulation
+- Constructors
+- `this` keyword
+- Static Members
+- Enums
+- ArrayList
+- Access Modifiers
+- Composition
+- Code Refactoring
+- Single Responsibility Principle (SRP)
+
+---
+
+## 📂 Project Structure
+
+```text
+bankmanagement
+│
+├── accounts
+│   ├── Account
+│   ├── SavingsAccount
+│   └── CurrentAccount
+│
+├── people
+│   ├── Person
+│   ├── Customer
+│   └── Employee
+│
+├── services
+│   └── Transaction
+│
+├── enums
+│   ├── TransactionType
+│   └── TransactionStatus
+│
+└── Main
+```
 
 ---
 
 ## 📈 Project Progress
 
-- ✅ Sprint 1 – Project Setup
-- ✅ Sprint 2 – Person Class
-- ✅ Sprint 3 – Customer Class
-- ✅ Sprint 4 – Employee Class
-- ✅ Sprint 5 – Account Class
-- ✅ Sprint 6 – Savings Account
-- ✅ Sprint 7 – Current Account
-- ✅ Sprint 8 – Banking Operations
-- ✅ Sprint 9 – Transaction Management
+**Core Java & OOP:** ██████████░░░░░░░░ **60%**
 
-**Current Phase:** Core Java & OOP
+### Completed
+- ✅ OOP Design
+- ✅ Banking Operations
+- ✅ Transaction Management
+- ✅ Transaction History
 
-➡️ **Next Sprint:** Transaction History (`ArrayList<Transaction>`)
+### Upcoming
+- 🔜 Sprint 11 – Bank Class
+- 🔜 Sprint 12 – Console Menu System
+- 🔜 Sprint 13 – Custom Exception Handling
+- 🔜 Sprint 14 – File Handling
+- 🔜 Sprint 15 – Fund Transfer
+- 🔜 JDBC Integration
+- 🔜 Swing GUI
