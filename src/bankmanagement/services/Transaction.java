@@ -59,6 +59,7 @@ public class Transaction {
         }else{
             System.out.println("Account number: Not Assigned");
         }
+        System.out.println("Transaction amount: "+getAmount());
         System.out.println("Transaction ID: "+getTransactionId());
         System.out.println("Transaction type: "+getType());
         System.out.println("Transaction Status: "+ getStatus());
