@@ -1,5 +1,11 @@
 package bankmanagement.accounts;
+import bankmanagement.enums.TransactionStatus;
+import bankmanagement.enums.TransactionType;
 import bankmanagement.people.Customer;
+import bankmanagement.services.Transaction;
+
+import java.util.ArrayList;
+
 //Stores common account information and behavior.
 public class Account {
     private String accNumber;
@@ -7,12 +13,15 @@ public class Account {
     private String ifscCode;
     private String branchName;
     private Customer accountHolder;
+    private ArrayList<Transaction> transactionHistory ;
+
     public Account(){
         this.accNumber = "Not Available";
         this.balance = 0.0;
         this.ifscCode = "Not Available.";
         this.branchName = "Not Available.";
         this.accountHolder = null;
+        this.transactionHistory = new ArrayList<>();
     }
     public Account(String accNumber,double balance,String ifscCode,String branchName,Customer accountHolder){
         this.accNumber = accNumber;
@@ -20,6 +29,7 @@ public class Account {
         this.ifscCode = ifscCode;
         this.branchName = branchName;
         this.accountHolder = accountHolder;
+        this.transactionHistory = new ArrayList<>();
     }
 
     public String getAccNumber() {
@@ -62,13 +72,36 @@ public class Account {
         System.out.println("available balance: "+getBalance());
     }
     public boolean deposit(double amount){
-        if(amount<=0) return false;
+        if(amount<=0) {
+            addTransaction(TransactionType.DEPOSIT,TransactionStatus.FAILED,amount);
+            return false;
+        }
         setBalance(getBalance()+amount);
+        addTransaction(TransactionType.DEPOSIT,TransactionStatus.SUCCESS,amount);
         return true;
     }
     public boolean withdraw(double amount){
-        if(amount<=0|| amount >getBalance()) return false;
+        if(amount<=0|| amount >getBalance()) {
+            addTransaction(TransactionType.WITHDRAWAL,TransactionStatus.FAILED,amount);
+            return false;
+        }
         setBalance(getBalance()-amount);
+        addTransaction(TransactionType.WITHDRAWAL,TransactionStatus.SUCCESS,amount);
         return true;
+    }
+    private void addTransaction(TransactionType type , TransactionStatus status,double amount){
+        Transaction t1 = new Transaction(amount, type, status,this);
+        transactionHistory.add(t1);
+    }
+    public void displayTransactionHistory(){
+        System.out.println("===== Transaction History =====");
+        if(transactionHistory.isEmpty()){
+            System.out.println("No Transactions found!");
+            return;
+        }
+        for(Transaction transaction: transactionHistory){
+            transaction.displayDetails();
+        }
+        System.out.println("------------------------");
     }
 }
