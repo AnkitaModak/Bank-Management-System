@@ -15,6 +15,29 @@ public class Bank {
         this.customers = new ArrayList<>();
         this.employees = new ArrayList<>();
     }
+    public String getBankName() {
+        return bankName;
+    }
+
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
+    public ArrayList<Employee> getEmployees() {
+        return employees;
+    }
+
+    public void displayBankDetails() {
+        System.out.println("========== BANK DETAILS ==========");
+        System.out.println("Bank Name : " + bankName);
+        System.out.println("Total Accounts : " + accounts.size());
+        System.out.println("Total Customers : " + customers.size());
+        System.out.println("Total Employees : " + employees.size());
+    }
 public boolean addAccount(Account account){
         if(account ==null) return false;
         if(accounts.contains(account)) return false;
@@ -55,12 +78,12 @@ public void displayCustomers(){
     }
 }
 public void displayEmployees(){
-    System.out.println("===== Employees =====");    
+    System.out.println("===== Employees =====");
     if(employees.isEmpty()){
         System.out.println("No employees found!");
         return;
     }
-    
+
     for(Employee employee : employees){
         employee.displayDetails();
     }
@@ -90,4 +113,3 @@ public Employee findEmployee(String empId){
         return null;
     }
 }
-
