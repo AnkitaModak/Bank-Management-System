@@ -6,7 +6,7 @@ import bankmanagement.services.Transaction;
 
 import java.util.ArrayList;
 
-//Stores common account information and behavior.
+//Stores common account information and behavior...
 public class Account {
     private String accNumber;
     private double balance;
