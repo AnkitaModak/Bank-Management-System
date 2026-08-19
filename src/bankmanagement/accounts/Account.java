@@ -102,6 +102,6 @@ public class Account {
         for(Transaction transaction: transactionHistory){
             transaction.displayDetails();
         }
-        System.out.println("------------------------");
+        System.out.println("-------------------------");
     }
 }
